@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2022", "DOM"],
-    "module": "CommonJS",
+    "target": "ES2020",
+    "module": "commonjs",
     "outDir": "./dist",
-    "moduleResolution": "Node",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
-    "types": ["jest", "node"],
-    "outDir": "dist"
+    "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }
-
