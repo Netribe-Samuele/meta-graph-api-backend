@@ -1,5 +1,7 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
+import * as fetch from 'node-fetch';
+// Oppure se vuoi l'import predefinito:
 import fetch from 'node-fetch';
 
 const app = express();
