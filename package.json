@@ -1,0 +1,29 @@
+{
+  "name": "meta-graph-api",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "run:postids": "ts-node src/runPagePostIds.ts",
+    "run:comments": "ts-node src/runPostComments.ts",
+    "run:allcomments": "ts-node src/runAllComments.ts",
+    "run:post": "ts-node src/runReadPost.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.11.30",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
